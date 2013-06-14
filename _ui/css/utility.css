@@ -21,11 +21,6 @@ small, .small, .note {font-size: 10px;}
 	font-weight: bold;
 }
 
-.offscreen {
-	position: fixed;
-	left: -9999px;
-}
-
 .clear {
 	clear: both;
 }
@@ -35,6 +30,43 @@ div.clear {
 	margin: 0 0 -1px 0;
 	overflow: hidden;
 }
+
+.offscreen {
+	position: fixed;
+	left: -9999px;
+}
+
+.float-right {float: right;}
+.float-left {float: left;}
+
+.align-right {text-align: right;}
+.align-left {text-align: left;}
+.align-center {text-align: center;}
+
+.block {display: block;}
+.inline {display: inline;}
+.inline-block {display: inline-block;}
+
+.hidden {visibility: hidden;}
+
+.nowrap {white-space: nowrap;}
+
+.normal {
+	font-weight: normal;
+	text-transform: none;
+}
+
+.first-line {font-size: 14px;}
+
+.small {font-size: 10px;}
+
+.lower {text-transform: lowercase;}
+
+.upper {text-transform: uppercase;}
+
+.underline {text-decoration: underline;}
+
+.strike {text-decoration: line-through;}
 
 div.hr {
 	clear: both;
@@ -56,35 +88,6 @@ div.cta-top {
 	div.cta-top a.lnk-top {
 		font-size: 10px;
 	}
-
-.floatright {float: right;}
-
-.floatleft {float: left;}
-
-.hidden {visibility: hidden;}
-
-.nowrap {white-space: nowrap;}
-
-.normal {
-	font-weight: normal;
-	text-transform: none;
-}
-
-.first-line {font-size: 14px;}
-
-.small {font-size: 10px;}
-
-.lower {text-transform: lowercase;}
-
-.underline {text-decoration: underline;}
-
-.strike {text-decoration: line-through;}
-
-.align-left {text-align: left;}
-
-.align-right {text-align: right;}
-
-.align-center {text-align: center;}
 
 p.intro {
 	font-size: 14px;
@@ -194,13 +197,11 @@ img.inline {
 
 img.inset-left {
 	float: left;
-	display: inline;
 	margin: 0 20px 12px 0;
 }
 
 img.inset-right {
 	float: right;
-	display: inline;
 	margin: 0 0 12px 20px;
 }
 
@@ -332,6 +333,7 @@ div.errormessage {
 div.callout {
 	border-bottom: 2px solid #666;
 	margin: 0 0 18px 0;
+	padding-top: 12px;
 }
 
 /* /callout styles */
