@@ -4,12 +4,9 @@
 **/
 var CNJS = CNJS || {};
 CNJS.Config = {
-	siteRoot: 'http://localhost:8888/webdev/html-forms',
-	isIE:  !!(navigator.userAgent.indexOf('MSIE') >= 0),
-	isIE7: !!(navigator.userAgent.indexOf('MSIE 7') >= 0),
-	isIE8: !!(navigator.userAgent.indexOf('MSIE 8') >= 0),
-	isIE9: !!(navigator.userAgent.indexOf('MSIE 9') >= 0),
-	isIDevice: (navigator.platform.indexOf('iPhone')>=0 || navigator.platform.indexOf('iPad')>=0) ? true : false,
+	siteRoot: 'http://localhost:8888/webdev/',
+	isIE9: (navigator.userAgent.indexOf('MSIE 9') >= 0) ? true : false,
+	isIDevice: (navigator.platform.indexOf('iPhone') >= 0 || navigator.platform.indexOf('iPad') >= 0) ? true : false,
 	isIPhone: (navigator.userAgent.match(/iPhone/i) !== null) ? true : false,
 	isIPad: (navigator.userAgent.match(/iPad/i) !== null) ? true : false,
 	defaultAjaxErrorMessage: '<div class="errormessage"><p>Sorry. Ajax request failed.</p></div>'
@@ -26,6 +23,7 @@ $(function () {
 	CNJS.Config.hasCssAnimations = Modernizr.cssanimations;
 	CNJS.Config.hasCssTransitions = Modernizr.csstransitions;
 	CNJS.Config.hasCssTransforms = Modernizr.csstransforms;
+	CNJS.Config.hasPointerEvents = Modernizr.pointerevents;
 	CNJS.Config.hasMediaQueries = Modernizr.mq('only all');
 	CNJS.Config.hasTouch = Modernizr.touch;
 });
