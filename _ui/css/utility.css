@@ -12,9 +12,9 @@
 html.no-js .hide-no-js {display: none;}
 html.js-enabled .hide-js-enabled {display: none;}
 
-big, .big {font-size: 16px;}
+big, .big {font-size: 1.2em;}
 
-small, .small, .note {font-size: 10px;}
+small, .small, .note {font-size: 0.9em;}
 
 .alert, .error, .important, .required {
 	color: #900;
@@ -23,12 +23,6 @@ small, .small, .note {font-size: 10px;}
 
 .clear {
 	clear: both;
-}
-div.clear {
-	clear: both;
-	height: 1px;
-	margin: 0 0 -1px 0;
-	overflow: hidden;
 }
 
 .offscreen {
@@ -52,13 +46,12 @@ div.clear {
 .nowrap {white-space: nowrap;}
 
 .normal {
+	font-style: normal;
 	font-weight: normal;
 	text-transform: none;
 }
 
-.first-line {font-size: 14px;}
-
-.small {font-size: 10px;}
+.first-line {font-size: 1.2em;}
 
 .lower {text-transform: lowercase;}
 
@@ -68,17 +61,6 @@ div.clear {
 
 .strike {text-decoration: line-through;}
 
-div.hr {
-	clear: both;
-	height: 1px;
-	border-top: 1px dotted #999;
-	margin: 0 0 18px 0;
-	overflow: hidden;
-}
-	div.hr hr {
-		display: none;
-	}
-
 div.cta {
 	/* "call to action" */
 }
@@ -86,20 +68,18 @@ div.cta-top {
 	text-align: right;
 }
 	div.cta-top a.lnk-top {
-		font-size: 10px;
+		font-size: 0.9em;
 	}
 
 p.intro {
-	font-size: 14px;
-	line-height: 20px;
+	font-size: 1.2em;
 	text-align: justify;
-	margin: 0 0 20px 0;
 }
 
 p.footnote {
-	font-size: 11px;
-	line-height: 15px;
-	margin: 0 0 15px 0;
+	font-size: 0.9em;
+	line-height: 1.2em;
+	margin: 0 0 1.2em 0;
 }
 
 /*** /general styles ***/
@@ -186,7 +166,7 @@ ul.sub-p, ol.sub-p, dl.sub-p, p.sub-p {
 
 img.block {
 	display: block;
-	margin: 0 0 12px 0;
+	margin: 0 0 1.0em 0;
 }
 
 img.inline {
@@ -197,12 +177,12 @@ img.inline {
 
 img.inset-left {
 	float: left;
-	margin: 0 20px 12px 0;
+	margin: 0 20px 1.0em 0;
 }
 
 img.inset-right {
 	float: right;
-	margin: 0 0 12px 20px;
+	margin: 0 0 1.0em 20px;
 }
 
 /* generic img classes, no inherent style */
