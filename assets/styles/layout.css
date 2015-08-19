@@ -5,21 +5,20 @@
 
 	----------------------------------------------- */
 
+html, body {
+	width: 100%;
+	max-width: 100%;
+	min-height: 100%;
+	overflow-x: hidden;
+}
+
 #wrapper {
 	width: 100%;
-	min-width: 960px;
-	/*
-	height: 100%;
+	min-width: 1000px;
 	min-height: 100%;
-	*/
 	margin: 0 auto;
 	position: relative;
 }
-
-	div.skipnav {
-		position: absolute;
-		left: -999999px;
-	}
 
 
 /**
@@ -31,11 +30,12 @@
 	background: #dedede;
 	position: fixed;
 	left: 0;
+	right: 0;
 	top: 0;
 	z-index: 3;
 }
 	#header .header-inner {
-		width: 960px;
+		width: 1000px;
 		height: 80px;
 		background: #cdcdcd;
 		margin: 0 auto;
@@ -53,11 +53,14 @@
 #footer {
 	width: 100%;
 	background: #dedede;
-	position: relative;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
 	z-index: 2;
 }
 	#footer .footer-inner {
-		width: 960px;
+		width: 1000px;
 		height: 80px;
 		background: #cdcdcd;
 		margin: 0 auto;
@@ -73,40 +76,35 @@
 **/
 
 #main {
-	width: 960px;
-	min-height: calc(100vh - 80px);
-	background: #dedede;
-	margin: 0 auto;
+	width: 100%;
+	min-height: 100%;
+	background: #cdcdcd;
 	position: relative;
 	z-index: 1;
 }
 	#main .main-inner {
-		width: 960px;
-		padding: 20px;
-		padding-top: 100px; /* must be equal to header height + desired padding-top */
+		width: 1000px;
+		min-height: 100vh;
+		background: #fff;
+		margin: 0 auto;
+		padding: 80px 20px; /*vertical padding must equal header and footer height*/
 		position: relative;
 	}
 
 	#content {
 		min-height: 640px;
-		background: #fff;
 		padding: 20px;
 		position: relative;
 	}
 	#subcol {
 		min-height: 640px;
-		background: #fff;
 		padding: 20px;
 		position: relative;
 	}
 
-	#main.fullwidth #content {
-		width: 920px;
-	}
-
 	#main.twocols #content {
 		float: left;
-		width: 660px;
+		width: 720px;
 	}
 	#main.twocols #subcol {
 		float: right;
@@ -147,10 +145,9 @@ body.popup {
 	}
 		body.popup div.head a.lnk-close {
 			float: right;
-			display: inline;
 			color: #000;
-			font-size: 0.910em;
-			line-height: 1.5em;
+			font-size: 10px;
+			line-height: 12px;
 			text-decoration: none;
 		}
 			body.popup div.head a.lnk-close span {

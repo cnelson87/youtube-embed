@@ -25,7 +25,7 @@ div.overlay {
 div.spinner {
 	width: 100%;
 	height: 100%;
-	background: transparent url('../img/spinner.gif') no-repeat center center;
+	background: transparent url('../images/spinner.gif') no-repeat center center;
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -96,7 +96,7 @@ div.carousel {
 			display: block;
 			width: 14px;
 			height: 26px;
-			background: transparent url('../img/lnks-prev-next.gif') no-repeat;
+			background: transparent url('../images/lnks-prev-next.gif') no-repeat;
 			margin-top: -13px;
 			position: absolute;
 			top: 50%;
@@ -243,7 +243,7 @@ div.fullwidth-carousel {
 				width: 14px;
 				height: 26px;
 				margin-top: -13px;
-				background: transparent url('../img/lnks-prev-next.gif') no-repeat;
+				background: transparent url('../images/lnks-prev-next.gif') no-repeat;
 				position: absolute;
 				top: 50%;
 			}
@@ -553,7 +553,7 @@ div.hero-carousel {}
 		width: 8px;
 		height: 12px;
 		margin: 0 4px;
-		background: transparent url('../img/arrow_prev.gif') no-repeat center center;
+		background: transparent url('../images/arrow_prev.gif') no-repeat center center;
 	}
 	div.hero-carousel div.hero-carousel-nav a.nav-prev:hover {
 		background-color: #c00;
@@ -567,7 +567,7 @@ div.hero-carousel {}
 		width: 8px;
 		height: 12px;
 		margin: 0 4px;
-		background: transparent url('../img/arrow_next.gif') no-repeat center center;
+		background: transparent url('../images/arrow_next.gif') no-repeat center center;
 	}
 	div.hero-carousel div.hero-carousel-nav a.nav-next:hover {
 		background-color: #c00;
@@ -607,7 +607,7 @@ div.tooltip {
 		background: #ccc;
 	}
 	div.tooltip div.tooltip-arrow {
-		background: transparent url('../img/tooltip-arrow.png') no-repeat left top;
+		background: transparent url('../images/tooltip-arrow.png') no-repeat left top;
 		position: absolute;
 	}
 	div.tooltip-east div.tooltip-arrow {
@@ -701,7 +701,7 @@ div.img-popover {
 div.modalspinner {
 	width: 100%;
 	height: 100%;
-	background: transparent url('../img/spinner.gif') no-repeat center center;
+	background: transparent url('../images/spinner.gif') no-repeat center center;
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -732,7 +732,7 @@ div#spinner {
 	width: 400px;
 	height: 400px;
 	*/
-	background: transparent url('../img/spinner.gif') no-repeat center center;
+	background: transparent url('../images/spinner.gif') no-repeat center center;
 	display: none;
 }
 
