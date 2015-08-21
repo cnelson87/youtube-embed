@@ -7,32 +7,32 @@
 
 
 /**
-*	iPhone
+*	iPad - Landscape
 **/
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1024px) {
 
 	#wrapper {
-		min-width: 320px;
-		max-width: 480px;
+		min-width: 720px;
 	}
-		#header .header-inner,
-		#footer .footer-inner,
-		#main .main-inner {
-			width: 280px;
-		}
-		#main #content {
-			width: 280px;
-		}
-		#main .twocols #content,
-		#main .twocols #subcol {
-			float: none;
-			width: 280px;
-		}
+	#header .header-inner,
+	#footer .footer-inner,
+	#main .main-inner {
+		width: 720px;
+	}
+	#main #content {
+		width: 680px;
+	}
+	#main.twocols #content {
+		width: 440px;
+	}
+	#main.twocols #subcol {
+		width: 220px;
+	}
 
 }
 
-/*** /iPhone ***/
+/*** /iPad ***/
 
 
 /**
@@ -43,22 +43,20 @@
 
 	#wrapper {
 		min-width: 480px;
-		max-width: 720px;
 	}
-		#main {
-			width: 720px;
-		}
-		#header .header-inner,
-		#footer .footer-inner,
-		#main .main-inner {
-			width: 720px;
-		}
-		#main.twocols #content {
-			width: 440px;
-		}
-		#main.twocols #subcol {
-			width: 220px;
-		}
+	#header .header-inner,
+	#footer .footer-inner,
+	#main .main-inner {
+		width: 480px;
+	}
+	#main #content {
+		width: 440px;
+	}
+	#main.twocols #content,
+	#main.twocols #subcol {
+		float: none;
+		width: 440px;
+	}
 
 }
 
@@ -66,30 +64,29 @@
 
 
 /**
-*	iPad - Landscape
+*	iPhone
 **/
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 480px) {
 
 	#wrapper {
-		min-width: 720px;
-		max-width: 960px;
+		min-width: 320px;
 	}
-		#main {
-			width: 720px;
-		}
-		#header .header-inner,
-		#footer .footer-inner,
-		#main .main-inner {
-			width: 720px;
-		}
-		#main.twocols #content {
-			width: 440px;
-		}
-		#main.twocols #subcol {
-			width: 220px;
-		}
+	#header .header-inner,
+	#footer .footer-inner,
+	#main .main-inner {
+		width: 320px;
+	}
+	#main #content {
+		width: 280px;
+	}
+	#main.twocols #content,
+	#main.twocols #subcol {
+		float: none;
+		width: 280px;
+	}
 
 }
 
-/*** /iPad ***/
+/*** /iPhone ***/
+
