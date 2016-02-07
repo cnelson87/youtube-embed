@@ -6,19 +6,31 @@
 	----------------------------------------------- */
 
 html, body {
-	width: 100%;
-	max-width: 100%;
-	min-height: 100%;
+	width: 100vw;
+	max-width: 100vw;
+	min-height: 100vh;
 	overflow-x: hidden;
 }
 
 #wrapper {
 	width: 100%;
-	min-width: 1000px;
+	min-width: 320px;
 	min-height: 100%;
 	margin: 0 auto;
 	position: relative;
 }
+/* Tablet+ */
+/*@media (min-width: 768px) {
+	#wrapper {
+
+	}
+}*/
+/* Desktop+ */
+/*@media (min-width: 1024px) {
+	#wrapper {
+
+	}
+}*/
 
 
 /**
@@ -26,22 +38,41 @@ html, body {
 **/
 
 #header {
-	width: 100%;
+	width: 100vw;
 	background: #dedede;
 	position: fixed;
 	left: 0;
 	right: 0;
 	top: 0;
-	z-index: 3;
+	z-index: 5;
 }
+#header .header-inner {
+	width: 100%;
+	height: 80px;
+	background: #cdcdcd;
+	margin: 0 auto;
+	padding: 20px;
+	position: relative;
+}
+/* Mobile */
+@media (max-width: 767px) {
+	#header .header-inner {
+		max-width: 600px;
+	}
+}
+/* Tablet+ */
+@media (min-width: 768px) {
+	#header .header-inner {
+		width: 720px;
+	}
+}
+/* Desktop+ */
+@media (min-width: 1024px) {
 	#header .header-inner {
 		width: 1000px;
-		height: 80px;
-		background: #cdcdcd;
-		margin: 0 auto;
-		padding: 20px;
-		position: relative;
 	}
+}
+
 
 /*** /header ***/
 
@@ -51,22 +82,22 @@ html, body {
 **/
 
 #footer {
-	width: 100%;
+	width: 100vw;
 	background: #dedede;
 	position: absolute;
 	left: 0;
 	right: 0;
 	bottom: 0;
-	z-index: 2;
+	z-index: 4;
 }
-	#footer .footer-inner {
-		width: 1000px;
-		height: 80px;
-		background: #cdcdcd;
-		margin: 0 auto;
-		padding: 20px;
-		position: relative;
-	}
+#footer .footer-inner {
+	width: 100%;
+	height: 80px;
+	background: #cdcdcd;
+	margin: 0 auto;
+	padding: 20px;
+	position: relative;
+}
 
 /*** /footer ***/
 
@@ -80,38 +111,90 @@ html, body {
 	min-height: 100%;
 	background: #cdcdcd;
 	position: relative;
-	z-index: 1;
+	z-index: 2;
 }
+#main .main-inner {
+	width: 100%;
+	min-height: 100vh;
+	background: #fff;
+	margin: 0 auto;
+	padding: 80px 20px; /*vertical padding must equal header and footer height*/
+	position: relative;
+}
+#content {
+	padding: 20px;
+	position: relative;
+}
+#subcol {
+	padding: 20px;
+	position: relative;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+	#header .header-inner,
+	#footer .footer-inner,
 	#main .main-inner {
-		width: 1000px;
-		min-height: 100vh;
-		background: #fff;
-		margin: 0 auto;
-		padding: 80px 20px; /*vertical padding must equal header and footer height*/
-		position: relative;
+		max-width: 600px;
 	}
-
-	#content {
-		min-height: 640px;
-		padding: 20px;
-		position: relative;
-	}
-	#subcol {
-		min-height: 640px;
-		padding: 20px;
-		position: relative;
-	}
-
-	#main.twocols #content {
-		float: left;
+}
+/* Tablet+ */
+@media (min-width: 768px) {
+	#header .header-inner,
+	#footer .footer-inner,
+	#main .main-inner {
 		width: 720px;
 	}
-	#main.twocols #subcol {
+	.twocols #content {
+		float: left;
+		width: 480px;
+		min-height: 640px;
+	}
+	.twocols #subcol {
 		float: right;
+		width: 200px;
+		min-height: 640px;
+	}
+}
+/* Desktop+ */
+@media (min-width: 1024px) {
+	#header .header-inner,
+	#footer .footer-inner,
+	#main .main-inner {
+		width: 1000px;
+	}
+	.twocols #content {
+		width: 720px;
+	}
+	.twocols #subcol {
 		width: 240px;
 	}
+}
 
 /*** /main ***/
+
+
+/**
+*	hero
+**/
+
+#hero {
+	/*width: 100%;*/
+	/*height: 600px;*/
+	margin: 0 -20px;
+	position: relative;
+}
+	#hero .media {
+		width: 100%;
+		/*height: 100%;*/
+		position: relative;
+	}
+	#hero .media > img {
+		display: block;
+		position: relative;
+	}
+
+/*** /hero ***/
 
 
 /**
