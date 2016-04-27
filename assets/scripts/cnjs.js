@@ -1,29 +1,26 @@
 
-/**
-*	set namespace
-**/
+
+if (!window.location.origin) {
+	window.location.origin = window.location.protocol + "//" + window.location.hostname + (window.location.port ? ':' + window.location.port: '');
+}
+
 var CNJS = CNJS || {};
 CNJS.Config = {
-	siteRoot: 'http://localhost:8888/webdev/',
-	isIE9: (navigator.userAgent.indexOf('MSIE 9') >= 0) ? true : false,
-	isIDevice: (navigator.platform.indexOf('iPhone') >= 0 || navigator.platform.indexOf('iPad') >= 0) ? true : false,
-	isIPhone: (navigator.userAgent.match(/iPhone/i) !== null) ? true : false,
-	isIPad: (navigator.userAgent.match(/iPad/i) !== null) ? true : false,
-	defaultAjaxErrorMessage: '<div class="errormessage"><p>Sorry. Ajax request failed.</p></div>'
+	siteUrl: window.location.origin,
+	isIE9: navigator.userAgent.indexOf('MSIE 9') !== -1,
+	isIE10: navigator.userAgent.indexOf('MSIE 10') !== -1,
+	isIE11: navigator.userAgent.indexOf('MSIE 11') !== -1,
+	isAndroid: /(android)/i.test(navigator.userAgent),
+	isIOS: navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false,
+	hasFormValidation: typeof document.createElement('input').checkValidity === 'function',
+	hasTouch: !!('ontouchstart' in window)
 };
 CNJS.UTILS = CNJS.UTILS || {};
 CNJS.UI = CNJS.UI || {};
 
-$(function () {
+$(function() {
 	CNJS.$window = $(window);
 	CNJS.$document = $(document);
 	CNJS.$html = $('html');
 	CNJS.$body = $('body');
-	CNJS.$html.removeClass('no-js').addClass('js-enabled');
-	CNJS.Config.hasCssAnimations = Modernizr.cssanimations;
-	CNJS.Config.hasCssTransitions = Modernizr.csstransitions;
-	CNJS.Config.hasCssTransforms = Modernizr.csstransforms;
-	CNJS.Config.hasPointerEvents = Modernizr.pointerevents;
-	CNJS.Config.hasMediaQueries = Modernizr.mq('only all');
-	CNJS.Config.hasTouch = Modernizr.touch;
 });

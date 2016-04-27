@@ -1,0 +1,33 @@
+
+/*	-----------------------------------------------
+
+	Custom Components
+
+	----------------------------------------------- */
+
+/**
+*	YouTube/Vimeo iframe video embed
+**/
+
+div.responsive-video-player {
+	display: block;
+	width: 100%;
+	height: 0;
+	padding-bottom: 56.25%;
+	margin-bottom: 20px;
+	position: relative;
+}
+div.responsive-video-player.ar4x3 {
+	padding-bottom: 75%;
+}
+	div.responsive-video-player iframe {
+		display: block;
+		width: 100%;
+		height: 100%;
+		border: 0;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+/*** /video embed ***/
