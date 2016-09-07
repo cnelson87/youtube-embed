@@ -32,7 +32,7 @@ small, .small, .note {font-size: 0.9em;}
 	clear: both;
 }
 
-.clearfix:after {
+.clearfix::after {
 	content: "";
 	display: table;
 	clear: both;
@@ -302,71 +302,3 @@ a.sm-btn:focus, a.sm-btn:hover, a.sm-btn:visited:hover {
 }
 
 /*** /link styles ***/
-
-
-/**
-*	data table
-**/
-
-table.data-table {
-	width: 100%;
-}
-	table.data-table th {
-		background: #efefef;
-		padding: 5px 10px;
-	}
-	table.data-table td {
-		padding: 5px 10px;
-	}
-
-/* /data table */
-
-
-/**
-*	ajax overlay & spinner
-**/
-
-div.overlay {
-	width: 100%;
-	height: 100%;
-	background: #efefef;
-	opacity: 0.7;
-	position: absolute;
-	left: 0;
-	top: 0;
-}
-div.spinner {
-	width: 100%;
-	height: 100%;
-	background: transparent url('../images/spinner.gif') no-repeat center center;
-	position: absolute;
-	left: 0;
-	top: 0;
-}
-
-/*** /ajax overlay & spinner ***/
-
-
-/**
-*	callout styles
-**/
-
-div.errormessage {
-	border: 1px solid #900;
-	margin: 0 0 18px 0;
-	padding: 10px 15px;
-}
-	div.errormessage p,
-	div.errormessage ul {
-		color: #900;
-		font-weight: bold;
-		margin: 0;
-	}
-
-div.callout {
-	border-bottom: 2px solid #666;
-	margin: 0 0 18px 0;
-	padding-top: 12px;
-}
-
-/* /callout styles */
